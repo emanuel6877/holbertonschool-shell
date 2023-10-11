@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d ! -path . -print | wc -1
+find . -type d -not -io_redirections_and_filters '.' | wc -l
